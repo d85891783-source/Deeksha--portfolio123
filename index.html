@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deeksha R - Software Engineer, Embedded Systems & AI Developer Portfolio. Diploma in Engineering from GPT Belur.">
+    <meta name="keywords" content="Deeksha R, Software Engineer, C Programming, Arduino, Artificial Intelligence, Stress Detection, GPT Belur, Eshwar Technologies, Portfolio">
+    <meta name="author" content="Deeksha R">
+    
+    <!-- Theme color meta tags for browser UI detection -->
+    <meta name="theme-color" content="#0e1320" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f7f9fc" media="(prefers-color-scheme: light)">
+    
+    <title>Deeksha R | Software Engineer & AI/IoT Developer</title>
+    
+    <!-- Google Fonts for Pixel Art & Modern Clean Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#home" class="skip-link">Skip to Content</a>
+
+    <!-- ========================================== -->
+    <!-- 1. VERTICAL NAVIGATION BAR (Prompt 3 & 1)   -->
+    <!-- Fixed left vertical nav with pixel style   -->
+    <!-- ========================================== -->
+    <nav class="navbar" id="main-nav" aria-label="Main vertical navigation">
+        <div class="navbar-container">
+            <!-- Brand / Logo with Pixel Art Badge -->
+            <a href="#home" class="nav-logo" aria-label="Deeksha R Home">
+                <span class="logo-pixel-box">
+                    <span class="logo-icon">&lt;DR/&gt;</span>
+                </span>
+                <span class="logo-text">DEEKSHA</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="nav-menu" id="nav-menu" role="menubar">
+                <a href="#home" class="nav-link active" role="menuitem" data-section="home" aria-label="Home section">
+                    <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="nav-text">Home</span>
+                    <span class="nav-tooltip">Home</span>
+                </a>
+                <a href="#about" class="nav-link" role="menuitem" data-section="about" aria-label="About Me section">
+                    <span class="nav-icon"><i class="fa-solid fa-user-astronaut"></i></span>
+                    <span class="nav-text">About</span>
+                    <span class="nav-tooltip">About Me</span>
+                </a>
+                <a href="#skills" class="nav-link" role="menuitem" data-section="skills" aria-label="Skills section">
+                    <span class="nav-icon"><i class="fa-solid fa-microchip"></i></span>
+                    <span class="nav-text">Skills</span>
+                    <span class="nav-tooltip">Skills</span>
+                </a>
+                <a href="#timeline" class="nav-link" role="menuitem" data-section="timeline" aria-label="Timeline section">
+                    <span class="nav-icon"><i class="fa-solid fa-timeline"></i></span>
+                    <span class="nav-text">Timeline</span>
+                    <span class="nav-tooltip">Timeline</span>
+                </a>
+                <a href="#projects" class="nav-link" role="menuitem" data-section="projects" aria-label="Projects section">
+                    <span class="nav-icon"><i class="fa-solid fa-laptop-code"></i></span>
+                    <span class="nav-text">Projects</span>
+                    <span class="nav-tooltip">Projects</span>
+                </a>
+                <a href="#video-intro" class="nav-link" role="menuitem" data-section="video-intro" aria-label="Intro Video section">
+                    <span class="nav-icon"><i class="fa-solid fa-play"></i></span>
+                    <span class="nav-text">Video</span>
+                    <span class="nav-tooltip">Intro Video</span>
+                </a>
+                <a href="#testimonials" class="nav-link" role="menuitem" data-section="testimonials" aria-label="Testimonials section">
+                    <span class="nav-icon"><i class="fa-solid fa-comments"></i></span>
+                    <span class="nav-text">Feedback</span>
+                    <span class="nav-tooltip">Testimonials</span>
+                </a>
+                <a href="#chat" class="nav-link" role="menuitem" data-section="chat" aria-label="AI Chat section">
+                    <span class="nav-icon"><i class="fa-solid fa-robot"></i></span>
+                    <span class="nav-text">AI Chat</span>
+                    <span class="nav-tooltip">AI Assistant</span>
+                </a>
+                <a href="#contact" class="nav-link" role="menuitem" data-section="contact" aria-label="Contact section">
+                    <span class="nav-icon"><i class="fa-solid fa-envelope"></i></span>
+                    <span class="nav-text">Contact</span>
+                    <span class="nav-tooltip">Contact</span>
+                </a>
+            </div>
+
+            <!-- Night Mode / Day Mode Toggle (Prompt 1, 2) -->
+            <div class="nav-bottom-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle night mode / day mode" title="Toggle theme (Ctrl+T)">
+                    <span class="theme-icon" id="theme-icon">🌙</span>
+                    <span class="theme-tooltip">Theme Switch</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Top Navigation Bar -->
+    <header class="mobile-header" id="mobile-header">
+        <a href="#home" class="mobile-logo">&lt;DEEKSHA R/&gt;</a>
+        <div class="mobile-controls">
+            <button class="mobile-theme-btn" id="mobile-theme-btn" aria-label="Toggle theme">🌙</button>
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-menu-drawer">
+        <div class="mobile-drawer-header">
+            <span class="pixel-tag">MENU.SYS</span>
+            <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <div class="mobile-drawer-links">
+            <a href="#home" class="mobile-drawer-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#about" class="mobile-drawer-link"><i class="fa-solid fa-user-astronaut"></i> About Me</a>
+            <a href="#skills" class="mobile-drawer-link"><i class="fa-solid fa-microchip"></i> Skills</a>
+            <a href="#timeline" class="mobile-drawer-link"><i class="fa-solid fa-timeline"></i> Timeline</a>
+            <a href="#projects" class="mobile-drawer-link"><i class="fa-solid fa-laptop-code"></i> Projects</a>
+            <a href="#video-intro" class="mobile-drawer-link"><i class="fa-solid fa-play"></i> Intro Video</a>
+            <a href="#testimonials" class="mobile-drawer-link"><i class="fa-solid fa-comments"></i> Testimonials</a>
+            <a href="#chat" class="mobile-drawer-link"><i class="fa-solid fa-robot"></i> AI Chat</a>
+            <a href="#contact" class="mobile-drawer-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
+        <div class="mobile-drawer-footer">
+            <a href="Deeksha_resume.pdf" target="_blank" class="pixel-btn primary full-width"><i class="fa-solid fa-file-arrow-down"></i> Resume PDF</a>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 2. HERO SECTION (Prompt 2 & Resume)        -->
+    <!-- Pixel art styling with dee 123.jpeg bg     -->
+    <!-- ========================================== -->
+    <header class="header">
+        <section class="hero" id="home" aria-label="Hero section">
+            <!-- Background Image overlay blending dee 123.jpeg -->
+            <div class="hero-bg-overlay" aria-hidden="true"></div>
+            <div class="hero-scanlines" aria-hidden="true"></div>
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <span class="pixel-status-dot"></span>
+                            <span class="pixel-status-text">READY FOR NEW CHALLENGES // 2026</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="hero-highlight">Deeksha R</span>
+                        </h1>
+                        <p class="hero-role">
+                            <span class="typing-text" id="typing-text">Software Engineer & AI/IoT Enthusiast</span>
+                            <span class="cursor">_</span>
+                        </p>
+                        <p class="hero-tagline">
+                            Diploma in Engineering graduate from <strong>Government Polytechnic, Belur</strong> with practical workplace experience at <strong>Eshwar Technologies</strong>. Crafting innovative solutions at the intersection of <strong>C programming</strong>, <strong>Arduino microcontrollers</strong>, and <strong>Artificial Intelligence</strong>.
+                        </p>
+
+                        <!-- Quick Credentials Pills -->
+                        <div class="hero-credentials">
+                            <span class="cred-pill"><i class="fa-solid fa-graduation-cap"></i> GPT Belur (CGPA: 7.16)</span>
+                            <span class="cred-pill"><i class="fa-solid fa-briefcase"></i> 6 Months Industry Exp</span>
+                            <span class="cred-pill"><i class="fa-solid fa-code"></i> C & Embedded AI</span>
+                            <span class="cred-pill"><i class="fa-solid fa-location-dot"></i> Belur, Karnataka</span>
+                        </div>
+
+                        <!-- CTA Actions -->
+                        <div class="hero-cta">
+                            <a href="#projects" class="pixel-btn primary">
+                                <i class="fa-solid fa-folder-open"></i> View Projects
+                            </a>
+                            <a href="#video-intro" class="pixel-btn accent">
+                                <i class="fa-solid fa-circle-play"></i> Watch Intro Video
+                            </a>
+                            <a href="Deeksha_resume.pdf" target="_blank" download="Deeksha_R_Resume.pdf" class="pixel-btn secondary" title="Download Deeksha's Resume PDF">
+                                <i class="fa-solid fa-file-pdf"></i> Resume PDF
+                            </a>
+                            <a href="#contact" class="pixel-btn ghost">
+                                <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Pixel Art Visual Showcase -->
+                    <div class="hero-visual">
+                        <div class="pixel-terminal-card">
+                            <div class="terminal-bar">
+                                <div class="terminal-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="terminal-title">deeksha@terminal:~$</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line"><span class="cmd-prompt">&gt;</span> <span class="cmd-text">whoami</span></div>
+                                <div class="terminal-output">Deeksha R [Software & Embedded Dev]</div>
+                                <div class="terminal-line"><span class="cmd-prompt">&gt;</span> <span class="cmd-text">cat core_skills.json</span></div>
+                                <div class="terminal-output code-block">
+                                    {<br>
+                                    &nbsp;&nbsp;"primary": "C Language",<br>
+                                    &nbsp;&nbsp;"hardware": "Arduino / Biometric Sensors",<br>
+                                    &nbsp;&nbsp;"intelligence": "AI Stress Detection",<br>
+                                    &nbsp;&nbsp;"education": "GPT Belur (CGPA 7.16)"<br>
+                                    }
+                                </div>
+                                <div class="terminal-line"><span class="cmd-prompt">&gt;</span> <span class="cmd-text">status --system</span></div>
+                                <div class="terminal-output success">● ALL SYSTEMS ONLINE: Ready for Employment</div>
+                            </div>
+                            <div class="terminal-pixel-avatar">
+                                <img src="deeee.jpeg" alt="Deeksha R Portrait" class="terminal-avatar-img">
+                                <div class="pixel-frame-border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <a href="#about" class="hero-scroll-indicator" aria-label="Scroll down to About section">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-label">SCROLL DOWN</span>
+            </a>
+        </section>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content">
+
+        <!-- ========================================== -->
+        <!-- 3. ABOUT ME SECTION (Prompt 4 & Resume)    -->
+        <!-- Profile image, bio, education, interests  -->
+        <!-- ========================================== -->
+        <section class="about" id="about" aria-labelledby="about-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">01 // PROFILE OVERVIEW</span>
+                    <h2 id="about-heading" class="section-title">About Me</h2>
+                    <div class="pixel-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Profile Photo with Pixel Art Framing -->
+                    <div class="about-image-column">
+                        <div class="about-avatar-card">
+                            <div class="avatar-pixel-wrap">
+                                <img src="deeee.jpeg" alt="Deeksha R - Software Engineer" class="about-avatar-img">
+                                <div class="avatar-corner tl"></div>
+                                <div class="avatar-corner tr"></div>
+                                <div class="avatar-corner bl"></div>
+                                <div class="avatar-corner br"></div>
+                            </div>
+                            <div class="avatar-caption">
+                                <span class="avatar-name">Deeksha R</span>
+                                <span class="avatar-role">Software Engineer & AI Innovator</span>
+                            </div>
+                            <div class="avatar-contact-quick">
+                                <a href="mailto:d85891783@gmail.com" class="quick-link"><i class="fa-solid fa-envelope"></i> d85891783@gmail.com</a>
+                                <a href="tel:8971766065" class="quick-link"><i class="fa-solid fa-phone"></i> +91 8971766065</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bio and Career Highlights -->
+                    <div class="about-text-column">
+                        <div class="about-bio-box">
+                            <h3 class="about-subheading">Engineering Solutions Through Code & Hardware</h3>
+                            <p class="bio-paragraph">
+                                Hello! I'm <strong>Deeksha R</strong>, a motivated Software Engineer holding a Diploma in Engineering from <strong>Government Polytechnic, Belur (GPT Belur)</strong> with an impressive <strong>CGPA of 7.16</strong> (2023 – 2026).
+                            </p>
+                            <p class="bio-paragraph">
+                                My journey combines software programming with hands-on hardware integration. I completed a <strong>6-month practical workplace tenure at Eshwar Technologies</strong>, where I supported day-to-day technical and operational activities, building strong discipline and problem-solving skills under real-world industry conditions.
+                            </p>
+                            <p class="bio-paragraph">
+                                Driven by curiosity, I spearheaded the <strong>Arduino and Stress Detection using AI</strong> project—interfacing sensitive electronic sensor components with machine learning concepts to detect human stress indicators in real-time. Whether it's crafting efficient <strong>C algorithms</strong>, architecting embedded prototypes, or building modern interactive web applications, I bring dedication, precision, and continuous curiosity to every project.
+                            </p>
+
+                            <!-- Personal Interests & Pillars -->
+                            <div class="about-highlights-grid">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                                    <div class="highlight-info">
+                                        <h4>AI & Biometrics</h4>
+                                        <p>Machine learning classification for health and stress signals.</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon"><i class="fa-solid fa-microchip"></i></div>
+                                    <div class="highlight-info">
+                                        <h4>Embedded IoT</h4>
+                                        <p>Arduino, sensor integration, and real-time electronic circuitry.</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon"><i class="fa-solid fa-terminal"></i></div>
+                                    <div class="highlight-info">
+                                        <h4>C Programming</h4>
+                                        <p>Low-level logic, memory management, and structured algorithmic design.</p>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon"><i class="fa-solid fa-gears"></i></div>
+                                    <div class="highlight-info">
+                                        <h4>Tech Operations</h4>
+                                        <p>6 months industry experience troubleshooting and maintaining technical systems.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="about-actions">
+                                <a href="Deeksha_resume.pdf" target="_blank" class="pixel-btn primary">
+                                    <i class="fa-solid fa-file-arrow-down"></i> Download Full Resume
+                                </a>
+                                <a href="#timeline" class="pixel-btn secondary">
+                                    <i class="fa-solid fa-arrow-down"></i> View Career Timeline
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 4. SKILLS SECTION (Prompt 5 & Resume)      -->
+        <!-- Progress bars, icons, pixel aesthetics     -->
+        <!-- ========================================== -->
+        <section class="skills" id="skills" aria-labelledby="skills-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">02 // TECHNICAL ARSENAL</span>
+                    <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+                    <div class="pixel-divider"></div>
+                    <p class="section-subtitle">
+                        Core competencies developed across diploma studies at GPT Belur, hands-on tenure at Eshwar Technologies, and specialized AI-hardware research projects.
+                    </p>
+                </div>
+
+                <!-- Skill Category Filter Tabs -->
+                <div class="skills-filter-container">
+                    <button class="skill-tab active" data-filter="all">All Skills</button>
+                    <button class="skill-tab" data-filter="programming">Programming</button>
+                    <button class="skill-tab" data-filter="hardware">Hardware & IoT</button>
+                    <button class="skill-tab" data-filter="ai">AI & Systems</button>
+                    <button class="skill-tab" data-filter="tools">Tools & Operations</button>
+                </div>
+
+                <!-- Skills Layout with Progress Bars and Pixel Cards -->
+                <div class="skills-grid" id="skills-grid">
+                    
+                    <!-- Skill Item: C Programming (Resume Primary) -->
+                    <!-- Represents low-level system programming, pointers, data structures, and memory management -->
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-card-header">
+                            <span class="skill-icon"><i class="fa-solid fa-c"></i></span>
+                            <div class="skill-meta">
+                                <h3 class="skill-name">C Programming</h3>
+                                <span class="skill-level">Core Competency</span>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <p class="skill-desc">Structured programming, algorithms, pointer arithmetic, memory control, and embedded logic.</p>
+                    </div>
+
+                    <!-- Skill Item: Arduino & Microcontrollers -->
+                    <!-- Represents microcontroller programming, analog/digital I/O, and component wiring -->
+                    <div class="skill-card" data-category="hardware">
+                        <div class="skill-card-header">
+                            <span class="skill-icon"><i class="fa-solid fa-microchip"></i></span>
+                            <div class="skill-meta">
+                                <h3 class="skill-name">Arduino & Microcontrollers</h3>
+                                <span class="skill-level">Hardware Development</span>
+                            </div>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress-fill" style="width: 88%;"></div>
+                        </div>
+                        <p class="skill-desc">Arduino Uno/Nano, microcontroller firmware, serial communication, and prototype breadboarding.</p>
+                    </div>
+
+                    <!-- Skill Item: Artificial Intelligence & Stress Detection -->
+                    <!-- Represents AI integration, biometric data processing, and threshold classification models -->
+                    <div class="skill-card" data-category="ai">
+                        <div class="skill-card-header">
+                            <span class="skill-icon"><i class="fa-solid fa-brain"></i></span>
+                            <div class="skill-meta">
+                                <h3 class="skill-name">AI & Data Analysis</h3>
+                                <span class="skill-level">Applied Intelligence</span>
+                            </div>
+                            <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="skill-progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress-fill" style="width: 82%;"></div>
+                        </div>
+                        <p class="skill-desc">AI-based stress detection algorithms, biometric pattern evaluation, and intelligent inference.</p>
+                    </div>
+
+                    <!-- Skill Item: Electronic Components & Sensor Integration -->
+                    <!-- Represents integrating galvanic skin response, pulse sensors, and analog conditioning -->
+                    <div class="skill-card" data-category="hardware">
+                        <div class="skill-card-header">
+                            <span class="skill-icon"><i class="fa-solid fa-bolt"></i></span>
+                            <div class="skill-meta">
+                                <h3 class="skill-name">Sensors & Hardware Interfacing</h3>
+                                <span class="skill-level">Electronics Integration</span>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress-fill" style="width: 85%;"></div>
+                        </div>
+                        <p class="skill-desc">Pulse sensors, GSR (Galvanic Skin Response), temperature/humidity modules, and signal filtering.</p>
+                    </div>
+
+                    <!-- Skill Item: Technical Operations & Workplace Troubleshooting -->
+                    <!-- Represents practical experience gained at Eshwar Technologies for 6 months -->
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-card-header">
+                            <span class="skill-icon"><i class="fa-solid fa-wrench"></i></span>
+                            <div class="skill-meta">
+                                <h3 class="skill-name">Technical Operations</h3>
+                                <span class="skill-level">Eshwar Technologies Exp</span>
+                            </div>
+                            <span class="skill-percentage">86%</span>
+                        </div>
+                        <div class="skill-progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress-fill" style="width: 86%;"></div>
+                        </div>
+                        <p class="skill-desc">6 months hands-on operational support, system troubleshooting, hardware maintenance, and workflow execution.</p>
+                    </div>
+
+                    <!-- Skill Item: Web Development (HTML5, CSS3, JavaScript) -->
+                    <!-- Modern web applications, responsive styling, and pixel-art front-end UI -->
+                    <div class="skill-card" data-category="programming">
+                        <div class="skill-card-header">
+                            <span class="skill-icon"><i class="fa-brands fa-html5"></i></span>
+                            <div class="skill-meta">
+                                <h3 class="skill-name">HTML5, CSS3 & JavaScript</h3>
+                                <span class="skill-level">Web Technologies</span>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+                        <p class="skill-desc">Modern semantic HTML5, responsive CSS grid/flexbox, pixel-art styling, and dynamic JavaScript ES6+.</p>
+                    </div>
+
+                    <!-- Skill Item: Git & Version Control -->
+                    <!-- Represents code management, branch tracking, and GitHub deployment -->
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-card-header">
+                            <span class="skill-icon"><i class="fa-brands fa-git-alt"></i></span>
+                            <div class="skill-meta">
+                                <h3 class="skill-name">Git & GitHub</h3>
+                                <span class="skill-level">Version Control</span>
+                            </div>
+                            <span class="skill-percentage">84%</span>
+                        </div>
+                        <div class="skill-progress-bar" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress-fill" style="width: 84%;"></div>
+                        </div>
+                        <p class="skill-desc">Repository management, code branching, commits, release tagging, and GitHub project collaboration.</p>
+                    </div>
+
+                    <!-- Skill Item: Problem Solving & System Architecture -->
+                    <!-- Represents algorithmic problem solving and modular engineering design -->
+                    <div class="skill-card" data-category="ai">
+                        <div class="skill-card-header">
+                            <span class="skill-icon"><i class="fa-solid fa-lightbulb"></i></span>
+                            <div class="skill-meta">
+                                <h3 class="skill-name">Problem Solving & Logic</h3>
+                                <span class="skill-level">Analytical Skill</span>
+                            </div>
+                            <span class="skill-percentage">87%</span>
+                        </div>
+                        <div class="skill-progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+                            <div class="skill-progress-fill" style="width: 87%;"></div>
+                        </div>
+                        <p class="skill-desc">Algorithm design, system debugging, data-driven decisions, and end-to-end project prototyping.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 5. TIMELINE SECTION (Prompt 6 & Resume)    -->
+        <!-- Education, Eshwar Tech, Project Milestones -->
+        <!-- ========================================== -->
+        <section class="timeline" id="timeline" aria-labelledby="timeline-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">03 // CAREER MILESTONES</span>
+                    <h2 id="timeline-heading" class="section-title">Career & Academic Timeline</h2>
+                    <div class="pixel-divider"></div>
+                    <p class="section-subtitle">
+                        Tracking educational achievements, industrial workplace tenures, and breakthrough engineering projects.
+                    </p>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <!-- Central pixel spine line -->
+                    <div class="timeline-line" aria-hidden="true"></div>
+
+                    <!-- Milestone 1: GPT Belur Diploma in Engineering -->
+                    <div class="timeline-card-item left">
+                        <div class="timeline-marker">
+                            <span class="timeline-pixel-dot"></span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-badge">2023 – 2026</div>
+                            <h3 class="timeline-title">Diploma in Engineering</h3>
+                            <h4 class="timeline-subtitle"><i class="fa-solid fa-building-columns"></i> Government Polytechnic, Belur (GPT Belur)</h4>
+                            <div class="timeline-meta-tag"><i class="fa-solid fa-star"></i> CGPA: 7.16 | Belur, Karnataka</div>
+                            <p class="timeline-description">
+                                Undertaking comprehensive engineering coursework encompassing computer fundamentals, programming in C, hardware architectures, electronics circuitry, and system design. Maintained an excellent academic record with a 7.16 cumulative GPA.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2: Eshwar Technologies (Workplace Experience) -->
+                    <div class="timeline-card-item right">
+                        <div class="timeline-marker">
+                            <span class="timeline-pixel-dot"></span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-badge">6 MONTHS TENURE</div>
+                            <h3 class="timeline-title">Technical Support & Operations Worker</h3>
+                            <h4 class="timeline-subtitle"><i class="fa-solid fa-briefcase"></i> Eshwar Technologies</h4>
+                            <div class="timeline-meta-tag"><i class="fa-solid fa-gears"></i> Practical Workplace Experience</div>
+                            <p class="timeline-description">
+                                Actively supported day-to-day technical and operational activities within a dynamic enterprise environment. Gained vital industry skills in operational troubleshooting, hardware/system maintenance, quality verification, and professional teamwork.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3: Arduino & AI Stress Detection Major Project -->
+                    <div class="timeline-card-item left">
+                        <div class="timeline-marker">
+                            <span class="timeline-pixel-dot"></span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-badge">FLAGSHIP PROJECT</div>
+                            <h3 class="timeline-title">Arduino & Stress Detection Using AI</h3>
+                            <h4 class="timeline-subtitle"><i class="fa-solid fa-brain"></i> Hardware-Software Engineering Initiative</h4>
+                            <div class="timeline-meta-tag"><i class="fa-solid fa-microchip"></i> Arduino + Artificial Intelligence</div>
+                            <p class="timeline-description">
+                                Researched, designed, and constructed a groundbreaking embedded stress detection apparatus. Integrated electronic biometric sensors with an AI inference module to detect physiological stress markers, bridging hardware data acquisition and intelligent computation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 4: Modern Portfolio & Cyber AI Agent -->
+                    <div class="timeline-card-item right">
+                        <div class="timeline-marker">
+                            <span class="timeline-pixel-dot"></span>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-badge">2026 & BEYOND</div>
+                            <h3 class="timeline-title">Software Engineering & AI Portfolio</h3>
+                            <h4 class="timeline-subtitle"><i class="fa-solid fa-code"></i> Full-Stack & Cyber-Pixel Architecture</h4>
+                            <div class="timeline-meta-tag"><i class="fa-solid fa-rocket"></i> Ready for Software / Embedded Roles</div>
+                            <p class="timeline-description">
+                                Designed and published an interactive cyber-pixel engineering portfolio featuring custom AI assistant simulation, responsive video integration, and email contact infrastructure, showcasing technical depth and modern craftsmanship.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 6. PROJECTS SECTION (Prompt 7 & Resume)    -->
+        <!-- Clickable thumbnails, hover effects, modal -->
+        <!-- ========================================== -->
+        <section class="projects" id="projects" aria-labelledby="projects-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">04 // FEATURED BUILDS</span>
+                    <h2 id="projects-heading" class="section-title">Projects Showcase</h2>
+                    <div class="pixel-divider"></div>
+                    <p class="section-subtitle">
+                        Explore hardware-AI integrations, embedded microcontroller solutions, and software systems. Click any card to inspect architectural details.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- PROJECT 1: Arduino and Stress Detection using AI (Core Resume Project) -->
+                    <!-- Connected via data-project="project-1" to modal detail trigger -->
+                    <article class="project-card" data-project="project-1">
+                        <div class="project-thumbnail">
+                            <div class="project-art-canvas art-ai-stress">
+                                <div class="pixel-pulse-anim">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                </div>
+                                <span class="pixel-badge top-right">ARDUINO + AI</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="pixel-btn primary small open-modal-btn" data-project="project-1">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Arduino</span>
+                                <span class="tag">AI / Machine Learning</span>
+                                <span class="tag">Biometrics</span>
+                                <span class="tag">C/C++</span>
+                            </div>
+                            <h3 class="project-title">Arduino & Stress Detection Using AI</h3>
+                            <p class="project-snippet">
+                                Developed an intelligent project combining Arduino microcontroller sensors with Artificial Intelligence algorithms to monitor biometric signals and identify human stress conditions.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status"><i class="fa-solid fa-check-circle"></i> Completed Milestone</span>
+                                <button class="project-arrow-btn" aria-label="Open project details"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: Smart IoT Health & Environmental Sentinel -->
+                    <!-- Connected via data-project="project-2" to modal detail trigger -->
+                    <article class="project-card" data-project="project-2">
+                        <div class="project-thumbnail">
+                            <div class="project-art-canvas art-iot">
+                                <div class="pixel-pulse-anim">
+                                    <i class="fa-solid fa-tower-broadcast"></i>
+                                </div>
+                                <span class="pixel-badge top-right">EMBEDDED IOT</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="pixel-btn primary small open-modal-btn" data-project="project-2">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Microcontrollers</span>
+                                <span class="tag">Sensors</span>
+                                <span class="tag">Telemetry</span>
+                                <span class="tag">C Language</span>
+                            </div>
+                            <h3 class="project-title">Smart IoT Environmental & Health Sentinel</h3>
+                            <p class="project-snippet">
+                                A sensor-driven telemetry system that captures real-time vital readings, ambient parameters, and triggers automated hazard alerts through microcontroller logic.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status"><i class="fa-solid fa-check-circle"></i> Operational Build</span>
+                                <button class="project-arrow-btn" aria-label="Open project details"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3: C-Based System Utilities & Algorithmic Engine -->
+                    <!-- Connected via data-project="project-3" to modal detail trigger -->
+                    <article class="project-card" data-project="project-3">
+                        <div class="project-thumbnail">
+                            <div class="project-art-canvas art-c-engine">
+                                <div class="pixel-pulse-anim">
+                                    <i class="fa-solid fa-microchip"></i>
+                                </div>
+                                <span class="pixel-badge top-right">SYSTEMS & C</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="pixel-btn primary small open-modal-btn" data-project="project-3">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">C Programming</span>
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">Memory Mgmt</span>
+                                <span class="tag">Algorithms</span>
+                            </div>
+                            <h3 class="project-title">C Low-Level Algorithmic Engine & Utilities</h3>
+                            <p class="project-snippet">
+                                High-performance data structure implementations and memory-efficient algorithms built from scratch in standard C, featuring pointer manipulation and binary operations.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status"><i class="fa-solid fa-check-circle"></i> Code Library</span>
+                                <button class="project-arrow-btn" aria-label="Open project details"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4: Cyber-Pixel Engineering Portfolio & AI Assistant -->
+                    <!-- Connected via data-project="project-4" to modal detail trigger -->
+                    <article class="project-card" data-project="project-4">
+                        <div class="project-thumbnail">
+                            <div class="project-art-canvas art-portfolio">
+                                <div class="pixel-pulse-anim">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                </div>
+                                <span class="pixel-badge top-right">FULL STACK</span>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="pixel-btn primary small open-modal-btn" data-project="project-4">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">HTML5 / CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">AI Chatbot</span>
+                                <span class="tag">Pixel Aesthetics</span>
+                            </div>
+                            <h3 class="project-title">Cyber-Pixel Engineering Portfolio & AI Bot</h3>
+                            <p class="project-snippet">
+                                An accessible, responsive retro-modern portfolio crafted with 8-bit styling, interactive career timeline, embedded self-introduction video, and simulated AI chatbot assistant.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status"><i class="fa-solid fa-check-circle"></i> Live Deployment</span>
+                                <button class="project-arrow-btn" aria-label="Open project details"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================== -->
+        <!-- 7. VIDEO SECTION (Prompt 8 & Uploaded Video)         -->
+        <!-- Plays Deeksha's uploaded video in a retro CRT bezel   -->
+        <!-- ==================================================== -->
+        <section class="video-section" id="video-intro" aria-labelledby="video-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">05 // SELF-INTRODUCTION & HIGHLIGHT</span>
+                    <h2 id="video-heading" class="section-title">Video Introduction</h2>
+                    <div class="pixel-divider"></div>
+                    <p class="section-subtitle">
+                        Get to know me directly! Watch my self-introduction video showcasing my passion for engineering, technical problem-solving, and career aspirations.
+                    </p>
+                </div>
+
+                <!-- Retro CRT Monitor / Arcade Cabinet Frame -->
+                <div class="crt-monitor-container">
+                    <div class="crt-monitor-bezel">
+                        <div class="crt-top-bar">
+                            <div class="crt-indicator">
+                                <span class="crt-led-dot active"></span>
+                                <span class="crt-led-text">REC // DEEKSHA_INTRO.MP4</span>
+                            </div>
+                            <div class="crt-badge">VCR • 1080P</div>
+                        </div>
+
+                        <!-- Responsive Video Box using CSS aspect-ratio -->
+                        <div class="crt-screen">
+                            <div class="crt-scanline-overlay" aria-hidden="true"></div>
+                            
+                            <!-- Video Player: Directly integrates uploaded file 'deeksh r in video.mp4' -->
+                            <video id="portfolio-video" class="responsive-video" controls playsinline preload="metadata" poster="deeee.jpeg">
+                                <source src="deeksh%20r%20in%20video.mp4" type="video/mp4">
+                                <source src="deeksh r in video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="crt-bottom-bar">
+                            <div class="crt-controls-mock">
+                                <span class="crt-btn-knob"></span>
+                                <span class="crt-btn-knob"></span>
+                                <span class="crt-speaker-grille"></span>
+                            </div>
+                            <div class="crt-status-text">DEEKSHA R // GOVERNMENT POLYTECHNIC, BELUR</div>
+                        </div>
+                    </div>
+
+                    <!-- Short Caption Explaining Video Content (Prompt 8 requirement) -->
+                    <div class="video-caption-card">
+                        <div class="caption-icon"><i class="fa-solid fa-circle-info"></i></div>
+                        <div class="caption-content">
+                            <h3>About This Video</h3>
+                            <p>
+                                In this personal introduction, <strong>Deeksha R</strong> shares her academic foundation at <strong>GPT Belur</strong>, workplace learnings at <strong>Eshwar Technologies</strong>, and her vision for engineering impactful solutions using <strong>C programming</strong>, <strong>Arduino microcontrollers</strong>, and <strong>AI technologies</strong>.
+                            </p>
+                            <div class="caption-actions">
+                                <button class="pixel-btn small" id="restart-video-btn"><i class="fa-solid fa-rotate-left"></i> Replay Video</button>
+                                <a href="Deeksha_resume.pdf" target="_blank" class="pixel-btn small primary"><i class="fa-solid fa-file-pdf"></i> View Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 8. TESTIMONIALS SECTION (Prompt 9)         -->
+        <!-- Card container, drop shadow, rounded corners-->
+        <!-- ========================================== -->
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">06 // ENDORSEMENTS & FEEDBACK</span>
+                    <h2 id="testimonials-heading" class="section-title">Testimonials & Peer Reviews</h2>
+                    <div class="pixel-divider"></div>
+                    <p class="section-subtitle">
+                        Feedback and recommendations from mentors, technical supervisors, and project peers.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    
+                    <!-- Testimonial 1: Eshwar Technologies Technical Lead -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "During her 6 months at Eshwar Technologies, Deeksha demonstrated exceptional work ethic and a swift grasp of day-to-day technical operations. Her readiness to learn and solve operational problems made her a dependable team contributor."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="author-details">
+                                <h4 class="author-name">Technical Lead</h4>
+                                <span class="author-title">Eshwar Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2: Project Guide / Faculty at GPT Belur -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Deeksha's initiative to bridge Arduino microcontrollers with Artificial Intelligence for stress detection was both ambitious and impressively implemented. She has strong analytical rigor and a consistent academic record with 7.16 CGPA."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-chalkboard-user"></i></div>
+                            <div class="author-details">
+                                <h4 class="author-name">Engineering Mentor</h4>
+                                <span class="author-title">GPT Belur (Government Polytechnic)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3: Peer Collaborator on AI-IoT Project -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Collaborating with Deeksha on the biometric sensor interfacing was seamless. Her expertise in C programming and hardware debugging ensured our prototypes executed accurately and without latency."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                            <div class="author-details">
+                                <h4 class="author-name">Project Collaborator</h4>
+                                <span class="author-title">IoT & Systems Team</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 9. AI CHAT INTERFACE SECTION (Prompt 10)   -->
+        <!-- Interactive simulated bot of Deeksha R     -->
+        <!-- ========================================== -->
+        <section class="chat-section" id="chat" aria-labelledby="chat-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">07 // INTERACTIVE AI CONVERSATION</span>
+                    <h2 id="chat-heading" class="section-title">Chat with Deeksha AI</h2>
+                    <div class="pixel-divider"></div>
+                    <p class="section-subtitle">
+                        Interact with an AI version of me trained on my resume background, projects at GPT Belur, technical skillset, and workplace experience!
+                    </p>
+                </div>
+
+                <div class="chat-wrapper">
+                    <div class="chat-terminal">
+                        <!-- Chat Header -->
+                        <div class="chat-header">
+                            <div class="chat-bot-profile">
+                                <div class="bot-status-ring">
+                                    <span class="bot-pixel-avatar"><i class="fa-solid fa-robot"></i></span>
+                                    <span class="online-indicator"></span>
+                                </div>
+                                <div class="bot-info">
+                                    <h3 class="bot-title">DeekshaBot v1.0</h3>
+                                    <span class="bot-subtitle">AI Twin • Knowledge Base: Resume & Projects</span>
+                                </div>
+                            </div>
+                            <div class="chat-header-actions">
+                                <button class="chat-action-btn" id="clear-chat-btn" title="Clear chat history">
+                                    <i class="fa-solid fa-trash-can"></i> Clear
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Chat Message Display Area -->
+                        <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
+                            <!-- Welcome Bot Message -->
+                            <div class="message bot-message">
+                                <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+                                <div class="msg-bubble">
+                                    <p>Hello! I am <strong>Deeksha's AI Assistant</strong>. Ask me anything about her engineering education at <strong>GPT Belur</strong>, her <strong>6 months at Eshwar Technologies</strong>, her <strong>Arduino & AI Stress Detection</strong> project, or how to get in touch!</p>
+                                    <span class="msg-time">Just now</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Suggestion Chips -->
+                        <div class="chat-quick-suggestions">
+                            <span class="suggestion-label">Suggested:</span>
+                            <button class="suggestion-chip" data-prompt="Tell me about your AI & Arduino stress detection project">🔬 AI Stress Project</button>
+                            <button class="suggestion-chip" data-prompt="What were your responsibilities at Eshwar Technologies?">💼 Eshwar Tech Experience</button>
+                            <button class="suggestion-chip" data-prompt="What programming languages and skills do you know?">💻 Core Skills</button>
+                            <button class="suggestion-chip" data-prompt="Where did you study and what was your CGPA?">🎓 Education & CGPA</button>
+                            <button class="suggestion-chip" data-prompt="How can I contact or hire you?">✉️ Contact Info</button>
+                        </div>
+
+                        <!-- Chat Input Box -->
+                        <form class="chat-input-form" id="chat-form">
+                            <label for="chat-user-input" class="visually-hidden">Ask Deeksha AI a question</label>
+                            <input 
+                                type="text" 
+                                id="chat-user-input" 
+                                class="chat-input" 
+                                placeholder="Type a question (e.g., 'Tell me about your C programming skills')..." 
+                                autocomplete="off"
+                                required
+                            >
+                            <button type="submit" class="pixel-btn primary chat-send-btn" id="chat-send-btn">
+                                <span>Send</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 10. CONTACT FORM SECTION (Prompt 11)       -->
+        <!-- Fields for Name, Email, Msg + API hook     -->
+        <!-- ========================================== -->
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow">08 // LET'S COLLABORATE</span>
+                    <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+                    <div class="pixel-divider"></div>
+                    <p class="section-subtitle">
+                        Have an opportunity, project, or technical role? Send me a message below or reach out via email and phone.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    
+                    <!-- Direct Info Cards -->
+                    <div class="contact-info-panel">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h3>Direct Email</h3>
+                                <a href="mailto:d85891783@gmail.com">d85891783@gmail.com</a>
+                                <span>Open for inquiries & technical roles</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-details">
+                                <h3>Phone / WhatsApp</h3>
+                                <a href="tel:8971766065">+91 8971766065</a>
+                                <span>Mon - Sat, 9:00 AM - 6:00 PM IST</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Belur, Karnataka, India</p>
+                                <span>Willing to relocate / Remote options</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                            <div class="contact-details">
+                                <h3>LinkedIn Profile</h3>
+                                <a href="https://www.linkedin.com/in/deeksha-r-073388440" target="_blank" rel="noopener noreferrer">linkedin.com/in/deeksha-r-073388440</a>
+                                <span>Let's connect professionally</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Container -->
+                    <div class="contact-form-panel">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            
+                            <!-- Name Field -->
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">
+                                    <i class="fa-solid fa-user"></i> Your Name *
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="contact-name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    placeholder="e.g. Rahul Sharma" 
+                                    required
+                                >
+                                <span class="form-error" id="name-error">Please enter your name.</span>
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">
+                                    <i class="fa-solid fa-envelope"></i> Your Email *
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="contact-email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    placeholder="e.g. rahul@example.com" 
+                                    required
+                                >
+                                <span class="form-error" id="email-error">Please enter a valid email address.</span>
+                            </div>
+
+                            <!-- Subject Field -->
+                            <div class="form-group">
+                                <label for="contact-subject" class="form-label">
+                                    <i class="fa-solid fa-tag"></i> Subject
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="contact-subject" 
+                                    name="subject" 
+                                    class="form-input" 
+                                    placeholder="e.g. Job Opportunity / Project Discussion"
+                                >
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">
+                                    <i class="fa-solid fa-message"></i> Message *
+                                </label>
+                                <textarea 
+                                    id="contact-message" 
+                                    name="message" 
+                                    rows="5" 
+                                    class="form-input form-textarea" 
+                                    placeholder="Write your message here..." 
+                                    required
+                                ></textarea>
+                                <span class="form-error" id="message-error">Please enter your message.</span>
+                            </div>
+
+                            <!-- Submit Button with High Contrast & Visual State -->
+                            <button type="submit" class="pixel-btn primary full-width form-submit-btn" id="contact-submit-btn">
+                                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                                <span class="btn-loading d-none"><i class="fa-solid fa-spinner fa-spin"></i> Dispatching...</span>
+                            </button>
+
+                            <!-- Live Feedback Notification Box -->
+                            <div class="form-feedback-box" id="form-feedback" role="alert" aria-live="assertive"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- 11. FOOTER & SOCIAL LINKS (Prompt 12)      -->
+    <!-- Pixel art aesthetic, even spacing, ARIA    -->
+    <!-- ========================================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo">&lt;DEEKSHA R /&gt;</span>
+                    <p class="footer-bio">Software Engineer • Embedded Systems • AI Innovator • GPT Belur</p>
+                </div>
+                
+                <!-- Social Media Icons in Pixel Art Frame -->
+                <div class="social-links-container">
+                    <a href="https://github.com/d85891783-source" target="_blank" rel="noopener noreferrer" class="social-pixel-btn" aria-label="Visit Deeksha's GitHub Profile" title="GitHub: d85891783-source">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/deeksha-r-073388440" target="_blank" rel="noopener noreferrer" class="social-pixel-btn" aria-label="Visit Deeksha's LinkedIn Profile" title="LinkedIn: deeksha-r-073388440">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:d85891783@gmail.com" class="social-pixel-btn" aria-label="Send Email to Deeksha" title="Email: d85891783@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:8971766065" class="social-pixel-btn" aria-label="Call Deeksha R" title="Phone: +91 8971766065">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pixel-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    &copy; 2026 <strong>Deeksha R</strong>. All Rights Reserved. Crafted with Cyber-Pixel Aesthetic.
+                </p>
+                <div class="footer-nav-shortcuts">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#timeline">Timeline</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#video-intro">Video</a>
+                    <a href="#chat">AI Chat</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page" title="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- PROJECT DETAIL MODAL DIALOG (Prompt 7)    -->
+    <!-- Opens rich detail view for clicked project -->
+    <!-- ========================================== -->
+    <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" hidden>
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-window">
+            <div class="modal-header">
+                <div class="modal-badge-wrapper">
+                    <span class="pixel-badge" id="modal-category">EMBEDDED AI</span>
+                    <h3 id="modal-project-title" class="modal-title">Project Title</h3>
+                </div>
+                <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-visual-banner" id="modal-visual-banner">
+                    <i class="fa-solid fa-microchip modal-large-icon" id="modal-icon"></i>
+                </div>
+                <div class="modal-content-details">
+                    <h4>Overview & Objectives</h4>
+                    <p id="modal-description">Detailed description will load here.</p>
+                    
+                    <h4>Key Technologies & Architecture</h4>
+                    <div class="modal-tech-stack" id="modal-tech-stack">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <h4>System Highlights</h4>
+                    <ul class="modal-highlights-list" id="modal-highlights">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/d85891783-source" target="_blank" rel="noopener noreferrer" class="pixel-btn primary" id="modal-github-link">
+                    <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+                <button class="pixel-btn secondary" id="modal-close-btn-bottom">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Script -->
+    <script src="script.js"></script>
+</body>
+</html>
